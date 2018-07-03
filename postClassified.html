@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Admin Area | Classifieds</title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="http://cdn.ckeditor.com/4.6.1/standard/ckeditor.js"></script>
+  </head>
+  <body>
+
+    <div id="page-title">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1><span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Post Classifieds <small>Manage Classifieds</small></h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section id="breadcrumb">
+      <div class="container">
+        <ol class="breadcrumb">
+          <li><a href="index.html">Dashboard</a></li>
+          <li class="active">Classifieds</li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="main">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-md-3">
+            <div class="list-group">
+              <a href="index.html" class="list-group-item active main-color-bg">
+                <span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Dashboard
+              </a>
+              <a href="classifieds.html" class="list-group-item"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Classifieds <span class="badge">33</span></a>
+              <a href="users.html" class="list-group-item"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Users <span class="badge">203</span></a>
+            </div>
+
+            <div class="well">
+              <h4>Disk Space Used</h4>
+              <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                      60%
+                  </div>
+              </div>
+              <h4>Bandwidth Used </h4>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%;">
+                    40%
+                </div>
+              </div>
+            </div> <!--end well-->
+          </div>
+
+          <div class="col-md-9">
+            <div class="panel panel-default">
+              <div class="panel-heading main-color-bg">
+                <h3 class="panel-title">Add a Classified</h3>
+              </div>
+              <div class="panel-body">
+                  <form>
+                    <div class="form-group">
+                      <label>Classified Category</label>
+                      <select class="classifiedCategory" name="classifiedCategory">
+                        <option value="realEstate">Real Estate</option>
+                        <option value="jobs">Jobs</option>
+                        <option value="services">Services</option>
+                      </select>
+                    </div>
+
+                    <div class="form-group">
+                      <label>Classified Sub Category</label>
+                      <select class="classifiedSubCategory" name="classifiedSubCategory">
+                        <option value="residential">Residential</option>
+                        <option value="commercial">Commercial</option>
+                        <option value="farm">Farm</option>
+                      </select>
+                    </div>
+
+                    <div class="form-group">
+                      <label>Classified Type</label>
+                      <select class="classifiedType" name="classifiedType">
+                        <option value="standalone house">Standalone House</option>
+                        <option value="apartment">Apartment</option>
+                        <option value="plot">Plot</option>
+                        <option value="office space">Office Space</option>
+                        <option value="retail space">Retail Space</option>
+                        <option value="warehouse">Warehouse</option>
+                        <option value="business">Business</option>
+                        <option value="cattle ranch">Cattle Ranch</option>
+                        <option value="poultry">Poultry</option>
+                        <option value="fish">Fish</option>
+                        <option value="horticulture">Horticulture</option>
+                        <option value="tshimo">Tshimo</option>
+                      </select>
+                    </div>
+
+                    <div class="form-group">
+                      <label>description</label>
+                      <textarea maxlength="200" name="editor1" class="form-control" placeholder="Description"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                      <label>Location</label>
+                      <input type="text" class="form-control" placeholder="Add location">
+                    </div>
+
+                    <div class="form-group">
+                      <label>Cost</label>
+                      <input type="text" class="form-control" placeholder="Add cost...">
+                    </div>
+
+                    <span class="author"><p><b>classified sent by:</b></p></span>
+                    <div class="form-group">
+                      <label>Full name</label>
+                      <input type="text" class="form-control" placeholder="Add Full name of the client...">
+                    </div>
+
+                    <div class="form-group">
+                      <label>Contact</label>
+                      <input type="text" class="form-control" placeholder="Add client contact number...">
+                    </div>
+
+                    <div class="form-group">
+                      <label>email</label>
+                      <input type="text" class="form-control" placeholder="Add client email address">
+                    </div>
+
+                    <br>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    </div>
+  </div>
+</div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
